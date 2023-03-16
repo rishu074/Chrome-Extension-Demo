@@ -1,0 +1,20 @@
+{
+    "name": "Just some Test",
+    "version": "1.0.0",
+    "description": "latest covid data of UK",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "https://discord.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}
